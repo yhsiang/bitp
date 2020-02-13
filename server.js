@@ -3,9 +3,13 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(require('express-redis')(6379, '127.0.0.1', {
-  auth_pass: process.env.REDIS_PASSWORD,
-}));
+
+const options =
+  process.env.REDIS_PASSWORD ? {
+    auth_pass: process.env.REDIS_PASSWORD
+  } : {};
+
+app.use(require('express-redis')(6379, '127.0.0.1', options));
 
 app.use(cors());
 

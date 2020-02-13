@@ -2,6 +2,10 @@ const redis = require("redis");
 const request = require('request-promise-native');
 const client = redis.createClient();
 
+if (process.env.REDIS_PASSWORD) {
+  client.auth(process.env.REDIS_PASSWORD);
+}
+
 client.on("error", function(error) {
   console.error(error);
 });
