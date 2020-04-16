@@ -11,7 +11,7 @@ client.on("error", function(error) {
 });
 
 const getBitoExPrice = async () => {
-  const uri = `https://www.bitoex.com/sync/dashboard/${Date.now()}`;
+  const uri = `https://www.bitoex.com/api/v0/rate/${Date.now()}`;
   const body = await request({ uri });
   return body;
 };
