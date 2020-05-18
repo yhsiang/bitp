@@ -11,18 +11,17 @@
     "api",
     "proxy",
     "express",
-    "request",
+    "axios",
     "cors"
   ],
   "author": "LY Cheng",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "cors": "^2.8.1",
     "express": "^4.15.2",
     "express-redis": "^2.0.1",
     "pm2": "^4.2.3",
-    "redis": "^3.0.2",
-    "request": "^2.81.0",
-    "request-promise-native": "^1.0.8"
+    "redis": "^3.0.2"
   }
 }
