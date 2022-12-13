@@ -19,7 +19,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.1",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "express-redis": "^2.0.1",
     "pm2": "^4.2.3",
     "redis": "^3.1.1"
